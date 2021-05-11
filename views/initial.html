@@ -1,0 +1,30 @@
+<div class="unselectable sectionContainer">
+
+    <div id="divThanks"></div>
+    <div id="divViewedBox" class="text-left">
+        <div id="divJust"></div>
+        <div ng-repeat="(key,value) in viewedList" class="viewBox viewedAlready smallerViewBox">
+            <div class="div{{key}}" title="{{key | uppercase}}">
+                <a href="/{{key}}" class="viewedLink"></a>
+            </div>
+        </div>
+    </div>
+
+    <!--<div id="divGreetings" ng-bind-html="greetingsOne"></div>-->
+    <div id="divGreetings">Welcome to <span class="specialText">pragaas.me</span></div>
+
+    <div id="divDynamicBox" contenteditable="true" class="text-center">
+        <span id="spDynamicText">{{dynamicText}}</span>
+    </div>
+
+    <span id="spSkip" ng-click="skipIntro()">SKIP INTRO</span>
+
+    <div id="divToView">
+        <div ng-repeat="(key,value) in toViewList" class="viewBox">
+            <div class="div{{key}}">
+                <a href="/{{key}}" class="viewLink bgTrans"><span class="spBoxText">{{value}}</span></a>
+            </div>
+        </div>
+    </div>
+
+</div>

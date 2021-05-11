@@ -1,0 +1,25 @@
+<div class="sectionContainer">
+
+    <span class="spHeader">
+        About Me
+    </span>
+
+    <div id="divAboutList">
+        <ul class="aboutList">
+            <li ng-repeat="points in keypoints">{{points}}</li>
+        </ul>
+    </div>
+
+    <span class="spHeader">
+        Interests
+    </span>
+
+    <div id="random-container" class="unselectable">
+        <span class="randomBox text-center" ng-repeat="(key, value) in aboutData">
+            <span class="fontMont boxOne">{{key}}</span>
+            <span class="boxTwo">{{value}}</span>
+        </span>
+    </div>
+
+    
+</div>

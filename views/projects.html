@@ -1,0 +1,19 @@
+<div class="sectionContainer unselectable extraPadding">
+    <table class="tblProjects" ng-repeat="(key,value) in projectsData">
+        <tr ng-repeat="elem in value">
+            <td ng-if="is_array(elem) === true">
+                <span ng-repeat="detail in elem" class="projBox">
+                    <span class="projLink" ng-if="!($last)"><a href="{{detail}}" target="_blank" class="fontMont">{{key | uppercase}}<img src="../data/images/external.png"></a></span>
+                    <span class="projDetail" ng-if="$last">{{detail}}</span>
+                </span>
+            </td>
+            <td ng-if="is_array(elem) === false">
+                <span class="imgBox unselectable" ng-repeat="(k,v) in elem" title="Technology used">
+                    <span class="imgIcon" style="background-image:url(data/icons/{{k}}.png);"></span>
+                    <span class="imgText">{{ v }}</span>
+                </span>
+                <span class="spBorder"></span>
+            </td>
+        </tr>
+    </table>
+</div>

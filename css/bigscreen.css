@@ -1,0 +1,545 @@
+.bigScreen {
+    display: block;
+}
+.underDev {
+    display: none;
+}
+
+#divHeadContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 15%;
+    min-height: 90px;
+    z-index: 199;
+    background: url(../data/images/white-bg.png) top right;
+    background-color: #e6e6e6;
+    border-bottom: 1px dashed gray;
+    /*box-shadow: 0 0 4px 2px rgba(0,0,0,0.5);*/
+}
+#divNameContainer {
+    width: 25%;
+    height: 100%;
+    min-height: 90px;
+    display: inline-block;
+    font-size: 0.7em;
+}
+#divRoleContainer{
+    width: 50%;
+    height: 100%;
+    min-height: 90px;
+    /*height: 150px;*/
+    display: inline-block;
+    /*border: 1px dashed green;*/
+}
+#divSocialContainer{
+    float: right;
+    width: 24%;
+    height: 100%;
+    min-height: 90px;
+    display: inline-block;
+    text-align: center;
+    
+    /*border: 1px dashed red;*/
+}
+.imgLogo {
+    position: absolute;
+    left: 46%;
+    bottom: -46px;
+    width: 99px;
+    width: calc(100% - 93%);
+    min-width: 90px;
+}
+.socialCaps {
+    position: absolute;
+    top: 15%;
+    left: 32%;
+    display: block;
+    font-weight: bolder;
+    /*border: 1px solid yellow;*/
+    opacity: 0;
+}
+.socialBox {
+    height: 15px;
+    width: 15px;
+    display: inline-block;
+    position: relative;
+    padding: 14px;
+    margin: 30px 10px;
+    background-color: #FFF;
+}
+.socialBox:hover .socialCaps{
+    opacity: 1;
+    /*opacity: 0.8;
+    top: 2px;
+    left: 2px;*/
+}
+.Git:hover {
+    background-color: #FFF;
+    border-color: #86D464;
+    color: #86D464;
+}
+.LinkedIn:hover {
+    background-color: #FFF;
+    border-color: #007AB9;
+    color: #007AB9;
+}
+.Blog:hover {
+    background-color: #FFF;
+    border-color: #FF8C00;
+    color: #FF8C00;
+}
+.doubleBorder {
+    border-width: 3px;
+    border-style: solid;
+    border-color: #000;
+    border-radius: 7px;
+}
+
+
+
+.fade {
+    opacity: 1;
+}
+.fade.ng-enter,
+.fade.ng-leave {
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.fade.ng-enter {
+    opacity: 0;
+}
+.fade.ng-enter-active {
+    opacity: 1;
+}
+.fade.ng-leave {
+    opacity: 1;
+}
+.fade.ng-leave-active {
+    opacity: 0;
+}
+
+
+.content {
+    width: 100%;
+    height: 85%;
+    max-height: calc(100% - 90px);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+}
+.sectionContainer {
+    margin: 6% 10% 10% 10%;
+    text-align: center;
+    min-height: 420px;
+}
+.extraPadding {
+    margin-top: 130px;
+    margin-bottom: 100px;
+}
+
+
+/*INTITAL*/
+#divGreetings {
+    max-width: 400px;
+    position: absolute;
+    top: 36%;
+    right: calc(50% - 200px);
+    left: calc(50% - 200px);
+    font-size: 46px;
+    display: none;
+}
+#divDynamicBox {
+    margin: 30px 7% 0px 7%;
+    min-height: 110px;
+}
+#spDynamicText {
+    display: inline;
+    font-size: 3em;
+}
+#divViewedBox {
+    min-height: 136px;
+}
+#divToView {
+
+}
+#spSkip {
+    position: absolute;
+    top: 30%;
+    font-size: 0.8em;
+    cursor: pointer;
+    right: 30%;
+    color: #B22222;
+}
+#spSkip:hover {
+    opacity: 0.6;
+}
+.bgTrans {
+    transition: all 1s ease 0s;
+    -moz-transition: all 1s ease 0s;
+    -webkit-transition: all 1s ease 0s;
+    -o-transition: all 1s ease 0s;
+}
+.divabout {
+    display: none;
+    background-color: #7FFFD4;
+    height: 100%;
+    width: 100%;
+    border-radius: 7px;
+}
+.divabout:hover > .viewLink{
+    background-image: url(../data/icons/about.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.viewedAlready .divabout{
+    opacity: 0.5;
+    background-image: url(../data/icons/about-32.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.divprojects {
+    display: none;
+    background-color: #DEB887;
+    height: 100%;
+    width: 100%;
+    border-radius: 7px;
+}
+.divprojects:hover > .viewLink{
+    background-image: url(../data/icons/projects.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.viewedAlready .divprojects{
+    opacity: 0.5;
+    background-image: url(../data/icons/projects-32.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.divskillset {
+    display: none;
+    background-color: #5F9EA0;
+    height: 100%;
+    width: 100%;
+    border-radius: 7px;
+}
+.divskillset:hover > .viewLink{
+    background-image: url(../data/icons/skillset.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.viewedAlready .divskillset{
+    opacity: 0.5;
+    background-image: url(../data/icons/skillset-32.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.spBoxText {
+    display: inline-block;
+    min-height: 18px;
+    background-color: #FFF;
+    position: absolute;
+    top:-9px;
+    left: -30px;
+    padding: 0px 5px;
+    border-radius: 5px;
+}
+.viewBox {
+    display: inline-block;
+    height: 90px;
+    width: 90px;
+    margin: 21px 90px;
+    vertical-align: middle;
+    font-weight: bolder;
+}
+.viewBox:hover {
+    position: relative;
+    top: 3px;
+    left: 3px;
+}
+.smallerViewBox {
+    display: inline-block;
+    height: 70px;
+    width: 70px;
+    margin: 18px 30px;
+    vertical-align: middle;
+    font-weight: bolder;
+}
+/* WE NEED THIS */
+.viewedLink {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: relative;
+    border-width: 3px;
+    border-style: dashed;
+    border-color: #000;
+    border-radius: 7px;
+}
+.viewLink {
+    width: 100%;
+    height: 100%;
+    padding: 36% 5%;
+    display: block;
+    position: relative;
+    border-width: 3px;
+    border-style: dashed;
+    border-color: #000;
+    border-radius: 7px;
+}
+#divResume {
+    width: 100%;
+    min-height: 46px;
+    color: #2F4F4F;
+    margin-top: 30px;
+}
+#btnDwnRes {
+    margin-left: 21px;
+    margin-bottom: 10px;
+}
+.typed-cursor {
+    font-size: 3em;
+    display: inline;
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+
+/*PROJETCS*/
+.projLink img {
+    padding-left: 30px;
+    opacity: 1;
+    margin-bottom: 5px;
+}
+.projLink {
+    font-size: 1.2em;
+}
+.projLink:hover, .projLink img:hover {
+    opacity: 0.5;
+}
+.projDetail {
+    display: block;
+    width: 90%;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.tblProjects {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 46px;
+    text-align: left;
+}
+.imgBox {
+    padding: 10px;
+    margin: 3px;
+    display: inline-block;
+    min-width: 200px;
+    width: 20%;
+    opacity: 0.9;
+    border: 1px dashed gray;
+    border-radius: 5px;
+}
+.imgText {
+    margin-left: 10px;
+    display: inline;
+}
+/*SKILLSET*/
+.imgIcon {
+    display: inline-block;
+    background-size:contain;
+    height: 50px;
+    width: 50px;
+    vertical-align: middle;
+}
+/*SKILLSET*/
+.spHeader{
+    opacity: 0.3;
+    line-height: 60px;
+    font-family: "Century Gothic", "Helvetica", sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    display: inline;
+    text-align: left;
+    /*border-bottom: 5px solid #F0E68C;*/
+    margin-left: -50%;
+    text-shadow: 0px 1px 0px rgba(255,255,255,.5);
+    color: #B22222;
+}
+#sp_Designer {
+    opacity: 0.9;
+    position: relative;
+    top: 50px;
+    right: 100px;
+    z-index: 210;
+    color: #FFF;
+    background-color: #CD5C5C;
+    padding: 6px;
+    border-radius: 6px;
+}
+#sp_developer {
+    opacity: 0.9;
+    position: relative;
+    bottom: -250px;
+    left: 80px;
+    z-index: 211;
+    color: #FFF;
+    background-color: #CD5C5C;
+    padding: 6px;
+    border-radius: 6px;
+}
+.pieContainer {
+    padding-top: 64px;
+}
+.pieChart {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    border-radius: 300px;
+    background-color: #DCDCDC;
+    display:inline-block;
+}
+.pieOuterOne {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 300px;
+    border-radius: 300px;
+    clip: rect(0px, 300px, 300px, 0px);
+    transform: rotate(0deg);
+}
+.pieInnerOne {
+    background-color: #66CDAA;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 300px;
+    border-radius: 300px;
+    clip: rect(0px, 150px, 300px, 0px);
+    transform: rotate(180deg);
+}
+.pieOuterTwo {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 300px;
+    border-radius: 300px;
+    clip: rect(0px, 300px, 300px, 150px);
+    transform: rotate(180deg);
+}
+.pieInnerTwo {
+    background-color: #66CDAA;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 300px;
+    border-radius: 300px; 
+    clip: rect(0px, 150px, 300px, 0px);
+    transform: rotate(90deg);
+}
+#skillsEachContainer {
+    padding-top: 30px;
+}
+.skillsEach {
+    width: 64%;
+    margin-bottom: 30px;
+    margin-top: 60px;
+}
+.lastUsed {
+    display: inline-block;
+    margin-left: 10%;
+}
+.expTotal {
+    display: inline-block;
+    margin-left: 10%;
+}
+.skillHead {
+    width: 100%;
+    display: block;
+}
+.skillDetail {
+    display: block;
+    width: 100%;
+    font-size: 0.9em;
+}
+.percentageFill {
+    display: inline-block;
+    width: 73%;
+    margin-left: 30px;
+    border: 1px solid gray;
+}
+.backGroundFill {
+    position: relative;
+    float: left;
+    opacity: 0.3;
+}
+.skillIcon {
+
+}
+.skillName {
+    margin-left: 5%;
+}
+
+/*ABOUT*/
+#random-container {
+    margin-top: 64px;
+}
+.randomBox {
+    vertical-align: top;
+    border-top: 1px dotted gray;
+    display: inline-block;
+    padding: 5px;
+    margin-left: 64px;
+    margin-bottom: 30px;
+    position: relative;
+}
+.boxOne, .boxTwo {
+    vertical-align: top;
+    width: 100px;
+    height: 46px;
+    display: inline-block;
+}
+.boxTwo {
+    font-size: 0.8em;
+}
+#divAboutList {
+    padding: 40px 190px 90px 190px;
+}
+.aboutList {
+    line-height: 2.1em;
+    list-style-type: circle;
+    text-align: left;
+}
+/*CONTACTS*/
+.socialList {
+    display: inline-block;
+    border-top: 1px dotted gray;
+    margin: 18px;
+    
+}
+#myCanvas{
+    /*border: 1px solid gray;*/
+}

@@ -1,0 +1,46 @@
+{
+    "Tevoted": [
+                    [
+                       "https://30nov88.github.io/",
+                       "An online time management tool which helps to track the amount of time spent for our daily routines."
+                    ],
+                    {
+                        "angular" :"Angular JS",
+                        "node" : "Node JS",
+                        "aws" : "AWS",
+                        "mongo": "Mongo DB",
+                        "jquery" : "jQuery",
+                        "html" : "HTML 5",
+                        "css" : "CSS 3",
+                        "bootstrap": "Bootstrap 3",
+                        "git" : "Git",
+                        "js" : "Javascript"
+                    }
+             ],
+    "Seats": [
+                [
+                    "https://30nov88.github.io/",
+                    "A cinema seat reservation module."
+                ],
+                {
+                    "angular" : "Angular JS",
+                    "jquery" : "jQuery",
+                    "git" : "Git",
+                    "js" : "Javascript"
+                }
+            ],
+    "Portfolio": [
+                    [
+                        "https://30nov88.github.io/old-portfolio",
+                        "This Website"
+                    ],
+                    {
+                        "angular" : "Angular JS",
+                        "jquery" : "jQuery",
+                        "html" : "HTML 5",
+                        "css" : "CSS 3",
+                        "git" : "Git",
+                        "js" : "Javascript"
+                    }
+                ]
+}

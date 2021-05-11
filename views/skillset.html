@@ -1,0 +1,41 @@
+<div class="sectionContainer unselectable">
+
+    <span class="spHeader">
+        UI
+    </span>
+
+    <div class="pieContainer">
+        <div class="pieChart">
+            <span id="sp_Designer" class="fontMont">Designer</span>
+            <div class="pieOuterOne">
+                <div class="pieInnerOne"></div>
+            </div>
+            <div class="pieOuterTwo">
+                <div class="pieInnerTwo"></div>
+            </div>
+            <span id="sp_developer" class="fontMont">Developer</span>
+        </div>
+    </div>
+
+    <span class="spBorder"></span>
+
+    <span class="spHeader">
+        Skill-set
+    </span>
+
+    <div id="skillsEachContainer">
+        <div class="skillsEach center-block" ng-repeat="(key, value) in skillsData">
+            <span class="skillHead">
+                <span class="imgIcon skillIcon" style="background-image: url(data/icons/{{key}}.png"></span>
+                <div class="percentageFill {{value[3]}}">
+                    <span class="skillName fontMont">{{value[0]}}</span>
+                </div>
+            </span>
+            <span class="skillDetail">
+                <span class="lastUsed"><span class="underline">Last Used</span>: {{value[1]}}</span>
+                <span class="expTotal"><span class="underline">Experience</span>: {{value[2]}}</span>
+            </span>
+        </div>
+    </div>
+
+</div>
