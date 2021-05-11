@@ -7,19 +7,19 @@ pfApp.config(['$routeProvider', '$locationProvider', function($routeProvider, $l
     $locationProvider.html5Mode({enabled: true, requireBase: false});
     $routeProvider
     .when("/", {
-        templateUrl : "views/initial.html",
+        templateUrl : "./views/initial.html",
         controller: "initialController"
     })
     .when("/projects", {
-        templateUrl : "views/projects.html",
+        templateUrl : "./views/projects.html",
         controller: "projectsController"
     })
     .when("/skillset", {
-        templateUrl : "views/skillset.html",
+        templateUrl : "./views/skillset.html",
         controller: "skillsController"
     })
     .when("/about", {
-        templateUrl : "views/about.html",
+        templateUrl : "./views/about.html",
         controller: "aboutController"
     })
     .otherwise({
