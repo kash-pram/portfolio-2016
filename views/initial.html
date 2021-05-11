@@ -5,7 +5,7 @@
         <div id="divJust"></div>
         <div ng-repeat="(key,value) in viewedList" class="viewBox viewedAlready smallerViewBox">
             <div class="div{{key}}" title="{{key | uppercase}}">
-                <a href="/{{key}}" class="viewedLink"></a>
+                <a href="./{{key}}" class="viewedLink"></a>
             </div>
         </div>
     </div>
@@ -22,7 +22,7 @@
     <div id="divToView">
         <div ng-repeat="(key,value) in toViewList" class="viewBox">
             <div class="div{{key}}">
-                <a href="/{{key}}" class="viewLink bgTrans"><span class="spBoxText">{{value}}</span></a>
+                <a href="./{{key}}" class="viewLink bgTrans"><span class="spBoxText">{{value}}</span></a>
             </div>
         </div>
     </div>
