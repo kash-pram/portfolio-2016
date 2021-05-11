@@ -61,7 +61,7 @@ pfApp.controller('MainCtrl', ['$scope', '$rootScope', 'getService', '$location',
         
         // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! IMPORTANT PM NOTE !!!!!!!!!!!!!!!!!!!!!!!!
         // URL TO BE MODIFIED IF THE GITHUB REPOSITORY IS MOVED
-        $scope.currentIndex = $scope.currentIndex.replace('/app-portfolio-2017/','');
+        $scope.currentIndex = $scope.currentIndex.replace('/portfolio-2016/','');
         // $scope.currentIndex = $scope.currentIndex.replace('/','');
 
         if($scope.currentIndex in $rootScope.toViewList){
