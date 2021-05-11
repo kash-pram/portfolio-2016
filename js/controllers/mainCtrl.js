@@ -58,6 +58,9 @@ pfApp.controller('MainCtrl', ['$scope', '$rootScope', 'getService', '$location',
 
     $scope.closeClick = function(){
         $scope.currentIndex = window.location.pathname;
+        
+        // REPLACE URL TO BE MODIFIED IF THE GITHUB REPOSITORY IS MOVED
+        // $scope.currentIndex = $scope.currentIndex.replace('app-portfolio-2017/','');
         $scope.currentIndex = $scope.currentIndex.replace('/','');
 
         if($scope.currentIndex in $rootScope.toViewList){
@@ -77,7 +80,7 @@ pfApp.controller('MainCtrl', ['$scope', '$rootScope', 'getService', '$location',
             $rootScope.quest = "reach me:  "+ $rootScope.mailTo;
         }*/
         
-        // $location.path('/');
+        $location.path('/');
         $('#divCloseContent').fadeOut();
     };
 }]);

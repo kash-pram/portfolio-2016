@@ -4,7 +4,7 @@ var pfApp = angular.module('pmApp', ['ngAnimate', 'ngRoute']);
 
 pfApp.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider){
 
-    $locationProvider.html5Mode({enabled: true, requireBase: true});
+    $locationProvider.html5Mode({enabled: true, requireBase: false});
     $routeProvider
     .when("/", {
         templateUrl : "views/initial.html",
