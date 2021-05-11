@@ -46,7 +46,7 @@ pfApp.controller('initialController', ['$scope', '$rootScope', function($scope, 
                     typeSpeed: 150,
                     callback: function(){
                         $('#divToView').html("<div id='divResume' class='fontMont'>Resume:<button id='btnDwnRes' class='btn btn-default'>Download</button></div>");
-                        var resumeUrl="https://www.dropbox.com/s/irfva9mgufdoliv/PM_PRAKASH_web_4yrs.doc?dl=1";
+                        var resumeUrl="https://www.dropbox.com/s/irfva9mgufdoliv/PRAKASH_web_4yrs.doc?dl=1";
                         $("#btnDwnRes").off().on('click', function(){
                             window.open(resumeUrl, '_blank');
                         });
