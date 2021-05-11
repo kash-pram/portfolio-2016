@@ -59,9 +59,10 @@ pfApp.controller('MainCtrl', ['$scope', '$rootScope', 'getService', '$location',
     $scope.closeClick = function(){
         $scope.currentIndex = window.location.pathname;
         
-        // REPLACE URL TO BE MODIFIED IF THE GITHUB REPOSITORY IS MOVED
-        // $scope.currentIndex = $scope.currentIndex.replace('app-portfolio-2017/','');
-        $scope.currentIndex = $scope.currentIndex.replace('/','');
+        // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! IMPORTANT PM NOTE !!!!!!!!!!!!!!!!!!!!!!!!
+        // URL TO BE MODIFIED IF THE GITHUB REPOSITORY IS MOVED
+        $scope.currentIndex = $scope.currentIndex.replace('/app-portfolio-2017/','');
+        // $scope.currentIndex = $scope.currentIndex.replace('/','');
 
         if($scope.currentIndex in $rootScope.toViewList){
             $rootScope.viewedList[$scope.currentIndex] = $rootScope.toViewList[$scope.currentIndex];
