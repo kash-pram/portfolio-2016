@@ -77,7 +77,7 @@ pfApp.controller('MainCtrl', ['$scope', '$rootScope', 'getService', '$location',
             $rootScope.quest = "reach me:  "+ $rootScope.mailTo;
         }*/
         
-        $location.path('/');
+        // $location.path('/');
         $('#divCloseContent').fadeOut();
     };
 }]);
